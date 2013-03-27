@@ -3,7 +3,7 @@ compilers_hir
 
 An interpreter for Project 3 HIR
 
-It will diff the hir s-expression (output from project 3) with the expected output. If There is a difference, it will optionally attempt to eval each s-expression and diff that.
+It will diff the hir s-expression (output from project 3) with the expected output. If there is a difference, it will optionally attempt to eval each s-expression and diff that.
 
 The results are collected from the python print statements in the program. If the program runs and does not print, the pass/fail result is unknown.
 
