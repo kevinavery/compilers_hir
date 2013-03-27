@@ -8,11 +8,13 @@ It will diff the hir s-expression (output from project 3) with the expected outp
 ## How to use
 
 Remove `(match (current-command-line-arguments) ...)` from bottom of `pytrans-stub.rkt`
-Add `(provide transform-program)` to top of `pytrans-stub.rkt`
+and add `(provide transform-program)` to top of `pytrans-stub.rkt`
 
 To diff without interpretation, run
-  racket runner.rkt test.py
+
+    racket runner.rkt test.py
 
 To diff with interpretation, run
-  racket runner.rkt test.py -i
-  
+
+    racket runner.rkt test.py -i
+
