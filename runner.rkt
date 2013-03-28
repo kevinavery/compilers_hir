@@ -393,7 +393,7 @@
    (test-trans #f file-name-without-extension)]
   ;; for normal parsing (prints trans to STDOUT)
   [(vector)
-   (pretty-write (transform-program (read current-input-port)))]
+   (pretty-write (transform-program (read (current-input-port))))]
   [else
    (error "bad arguments")])
 

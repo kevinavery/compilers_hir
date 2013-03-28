@@ -5,12 +5,12 @@ all: runner.rkt pytrans-stub.rkt
 
 # Accepts a Python source file on STDIN and sends output to STDOUT.
 # Example: make run < test.py > test.py.trans
-run: all
-	@pylex | @pyparse | make -s trans
+run:
+	@pylex | pyparse | make -s trans
 
 # Accepts the output of project 2 on STDIN and sends output to STDOUT.
 # Example: make trans < test.py.parsed > test.py.trans
-trans: all
+trans:
 	./pytrans
 
 # Runs a single test as specified.
